@@ -6,6 +6,27 @@
 body
     background: #110620
 
+::-webkit-scrollbar 
+    width: 5px /* ширина для вертикального скролла */
+    height: 8px /* высота для горизонтального скролла */
+    background-color: #17171B
+
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb 
+    background-color: #ffffff
+    border-radius: 10px
+    
+
+
+@font-face 
+    font-family: 'Himagsikan'
+    src: url('../fonts/himagsikan.ttf')
+
+@font-face 
+    font-family: 'Poppins'
+    src: url('../fonts/')
+
 .usual_button
     width: 210px
     height: 48px
@@ -68,10 +89,11 @@ body
         line-height: 100%
         color: #FFFFFF
     &__sublabel
+        margin-top: 15px
         font-family: 'Poppins'
         font-style: normal
-        font-weight: 400
-        font-size: 20px
+        font-weight: 300
+        font-size: 18px
         line-height: 150%
         /* or 30px */
         color: rgba(255, 255, 255, 0.8)
@@ -202,7 +224,58 @@ footer
     height: 483px
     background: #04000A
     backdrop-filter: blur(6px)
-
+.office-address
+    &__label
+        font-family: 'Cinzel'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 28px
+        color: #FFFFFF
+    &__sublabel
+        font-family: 'Poppins'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 22px
+        color: #FFFFFF
+        opacity: 0.75
+.footer-link
+    list-style-type: none
+    &__label
+        font-family: 'Cinzel'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 28px
+        color: #FFFFFF
+        opacity: 0.75
+    &__contact-label
+        font-family: 'Noto Sans'
+        font-style: normal
+        font-weight: 300
+        font-size: 18px
+        line-height: 24px
+        /* identical to box height, or 133% */
+        color: #FFFFFF
+        text-decoration: none
+        opacity: 0.75
+    &__contact-label:hover
+        color: #FFFFFF
+        opacity: 1.0
+    &__text
+        font-family: 'Poppins'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 22px
+        color: #FFFFFF
+        opacity: 0.75
+        text-decoration: none
+    &__text:hover
+        color: #FFFFFF
+        opacity: 1.0
+        
 @import "blocks/header_sec.sass"
 @import "blocks/promo.sass"
 // @import "blocks/_nft_arts_sec.sass"

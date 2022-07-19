@@ -8,17 +8,21 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body style='overflow-x:hidden;'>
     <div class="promo">
         <header>
-            <div class="header">
-                <li class="header__link">Discover</li>
-                <li class="header__link">About</li>
-                <li class="header__link">Artists</li>
-                <li class="header__link">Help</li>
-            </div>
+            <nav class="header"id="menu">
+                <li><a href="#Discover" class="header__link">Discover</a></li>
+                <li><a href="#About" class="header__link">About</a></li>
+                <li><a href="#Artists" class="header__link">Artists</a></li>
+                <li><a href="#Contact" class="header__link">Contact</a></li>
+            </nav>
             </header>
             <div class="container">
                 <div class="promo__expedition">
@@ -29,7 +33,7 @@
             </div>
             
     </div>
-    <section class="nft-arts">
+    <section class="nft-arts" id="Discover">
         <div class="container">
             <div class="nft-arts__label">Rare and Super Unique<br> NFT that you’ll love!</div>
             <div class="nft-arts__slider">
@@ -41,7 +45,7 @@
             <button class="nft-arts__button">Discover More Treasures</button>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="About">
         <!-- <div class="about__img"><img src="img/about_img.png" alt=""></div> -->
         <div class="img-animated img-animated_space_bg">
             <img src="img/stone_1.png" alt="" class="img-animated__elem1">
@@ -55,49 +59,49 @@
             <div class="about__sublabel">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</div>
             <div class="social">
                 <button class="social__button"><img src="img/discord.png" alt=""></button>
-                <div class="social__icon-link"><img src="img/instagram_icon.svg" alt=""></div>
-                <div class="social__icon-link"><img src="img/facebook_icon.svg" alt=""></div>
+                <a href="#" class="social__icon-link"><img src="img/instagram_icon.svg" alt=""></a>
+                <a href="#" class="social__icon-link"><img src="img/facebook_icon.svg" alt=""></a>
             </div>
         </div>
     </section>
-    <section class="creators">
+    <section class="creators" id="Artists">
         <div class="creators__label">Meet Our Creators</div>
         <div class="creators__sublabel">We believe artists need to be compensated for every sale,not just the first one!</div>
         <img src="img/creators.png" alt="" class="creators__img">
     </section>
-    <footer>
+    <footer id="Contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-3"><img src="img/Logo LIFT.svg" alt=""></div>
                 <div class="col-md-2">
-                    <ul class="footer-link">
+                    <ul class="footer-link" id="menu">
                         <div class="footer-link__label">Sitemap</div>
-                        <li class="footer-link__text">Home</li>
-                        <li class="footer-link__text">Abouts</li>
-                        <li class="footer-link__text">Growers</li>
-                        <li class="footer-link__text">Merchants</li>
-                        <li class="footer-link__text">Contact</li>
+                        <li><a href="#Discover" class="footer-link__text">Discover</a></li>
+                        <li><a href="#About" class="footer-link__text">About</a></li>
+                        <li><a href="#Artists" class="footer-link__text">Artists</a></li>
+                        <li><a href="#Contact" class="footer-link__text">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
                     <ul class="footer-link">
                         <div class="footer-link__label">Socials</div>
-                        <li class="footer-link__text">Facebook</li>
-                        <li class="footer-link__text">Linkedin</li>
-                        <li class="footer-link__text">Instagram</li>
-                        <li class="footer-link__text">Twitter</li>
+                        <li ><a href="#" class="footer-link__text">Facebook </a></li>
+                        <li ><a href="#" class="footer-link__text">Linkedin </a></li>
+                        <li ><a href="#" class="footer-link__text">Instagram </a></li>
+                        <li ><a href="#" class="footer-link__text">Twitter </a></li>
+                        
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <div class="office-address">
-                        <office-address__label>Head Office</office-address__label>
-                        <office-address__sublabel>Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22, Charlottesville, CA 45565</office-address__sublabel>
+                        <div class = "office-address__label">Head Office</div>
+                        <office-div class = "office-address__sublabel">Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22, Charlottesville, CA 45565</office-div>
                     </div>
                 </div>
                 <div class="row mt-5">
-                    <div class="col-md-4"><div class="contact">contact@lift.agency </div></div>
-                    <div class="col-md-3"><div class="tell">(123) 456-7890</div></div>
-                    <div class="col-md-5"><div class="mark">© 2020 Lift Media. All rights reserved.</div></div>
+                    <div class="col-md-4"><a href="contact@lift.agency" class="footer-link__contact-label">contact@lift.agency</a> </div>
+                    <div class="col-md-3"><a href="tel:+1234567890" class="footer-link__contact-label">(123) 456-7890</a></div>
+                    <div class="col-md-5"><div class="footer-link__text">© 2020 Lift Media. All rights reserved.</div></div>
                 </div>
             </div>
         </div>
