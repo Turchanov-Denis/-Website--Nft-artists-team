@@ -2,7 +2,9 @@
     width: 100%;
     height: 1077px;
     background-image: url(../img/descover_bg.jpg);
-    background-size: cover;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
     
 
     &__img {
@@ -12,12 +14,12 @@
     }
 
     &__expedition {
+        padding-top: 100px;
         height: 100%;
         background-image: url("../img/descover_mountion_add.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        padding-top: 100px;
 
     }
 

@@ -23,9 +23,10 @@ body
 .wrapper
     overflow: hidden
 .container
-    max-width: 990px
+    max-width: 1050px
+    // padding: 0 30
     margin: 0 auto
-    
+
 .usual_button
     width: 210px
     height: 48px
@@ -77,33 +78,6 @@ body
     &__slider
         width: 871px
         margin: 0px auto
-
-.about
-    margin-top: 80px
-    max-width: 1100px
-    margin: 0 auto
-    display: flex
-    justify-content: start
-    align-items: center
-    &__label
-        font-family: 'Himagsikan'
-        font-style: normal
-        font-weight: 400
-        font-size: 40px
-        line-height: 100%
-        color: #FFFFFF
-    &__sublabel
-        margin-top: 15px
-        font-family: 'Poppins'
-        font-style: normal
-        font-weight: 300
-        font-size: 18px
-        line-height: 150%
-        /* or 30px */
-        color: rgba(255, 255, 255, 0.8)
-    &__mark
-        min-width: 428px
-        height: 380px
 
 .social
     margin-top: 30px
@@ -188,47 +162,6 @@ body
         bottom: 216px
     100%
         bottom: 196px
-.img-animated
-    &_space_bg
-        display: block
-        min-width: 835px
-        height: 835px
-        position: relative
-        right: 300px
-        background-image: url('../img/LANDSCAPE_about.png')
-        // content: url('../img/LANDSCAPE_about.png') 
-    &__elem1
-        position: relative
-        left: 737px
-        bottom: -217px
-        animation-name: moving1
-        animation-duration: 2s
-        animation-timing-function: ease-in-out
-        animation-iteration-count: infinite
-    &__elem2
-        position: relative
-        left: 575px
-        bottom: -343px
-        animation-name: moving2
-        animation-duration: 2s
-        animation-timing-function: ease-in-out
-        animation-iteration-count: infinite
-    &__elem3
-        position: relative
-        left: 276px
-        bottom: -320px
-        animation-name: moving3
-        animation-duration: 4s
-        animation-timing-function: ease-in-out
-        animation-iteration-count: infinite
-    &__elem4
-        position: relative
-        left: 111px
-        bottom: 196px
-        animation-name: moving4
-        animation-duration: 4s
-        animation-timing-function: ease-in-out
-        animation-iteration-count: infinite
 
 footer
     margin-top: 60px
@@ -292,4 +225,5 @@ footer
 @import "_nullstyle.scss"
 @import "_header_sec.scss"
 @import "_promo.scss"
-// @import "blocks/_nft_arts_sec.sass"
+@import "_nft_arts_sec.scss"
+@import "_about.scss"

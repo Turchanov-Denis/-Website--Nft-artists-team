@@ -1,0 +1,88 @@
+.about {
+    margin: 80px 0 0 auto;
+    padding: 110px 0;
+    width: 100%;
+    position: relative;
+
+    &__label {
+        font-family: 'Himagsikan';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 100%;
+        color: #FFFFFF
+    }
+
+    &__sublabel {
+        margin-top: 15px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 150%;
+        /* or 30px */
+        color: rgba(255, 255, 255, 0.8)
+    }
+
+    &__mark {
+        width: 50%;
+        height: 380px;
+        margin-left: auto;
+    }
+}
+
+.img-animated {
+    &_space_bg {
+        display: block;
+        width: 835px;
+        height: 835px;
+        position: absolute;
+        z-index: -1;
+        background-image: url('../img/LANDSCAPE_about.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translate(-20%,-30%);
+    }
+
+    // content: url('../img/LANDSCAPE_about.png') 
+    &__elem1 {
+        position: relative;
+        left: 737px;
+        bottom: -217px;
+        animation-name: moving1;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    &__elem2 {
+        position: relative;
+        left: 575px;
+        bottom: -343px;
+        animation-name: moving2;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    &__elem3 {
+        position: relative;
+        left: 276px;
+        bottom: -320px;
+        animation-name: moving3;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    &__elem4 {
+        position: relative;
+        left: 111px;
+        bottom: 196px;
+        animation-name: moving4;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+}
