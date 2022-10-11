@@ -1,0 +1,121 @@
+.footer {
+
+    padding: 67px 10px 57px 10px;
+    width: 100%;
+    
+    background: #04000A;
+    backdrop-filter: blur(6px);
+    &__body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @media (max-width: 970px) {
+        &__row {
+           flex-wrap: wrap;
+
+        }
+        &__column {
+            padding: 30px 0;
+            margin: 0 auto;
+        }
+
+    }
+    @media (max-width: 500px) {
+        &__row {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__column {
+            padding: 30px;
+        }
+
+    }
+   
+}
+
+
+
+.office-address {
+    width: 302px;
+    &__label {
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+
+    &__sublabel {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+        opacity: 0.75;
+    }
+}
+
+.footer-link {
+    width: 65px;
+    display: block;
+    margin: 0 auto;
+    list-style-type: none;
+    li {
+        margin-bottom: 10px;
+    }
+    &__label {
+        margin-bottom: 20px;
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #FFFFFF;
+        opacity: 0.75;
+        
+    }
+
+    &__contact-label {
+        
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        /* identical to box height, or 133% */
+        color: #FFFFFF;
+        text-decoration: none;
+        opacity: 0.75;
+    }
+
+    &__contact-label:hover {
+        color: #FFFFFF;
+        opacity: 1.0;
+    }
+
+    &__text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+        opacity: 0.75;
+        text-decoration: none;
+        
+    }
+
+    &__text:hover {
+        color: #FFFFFF;
+        opacity: 1.0;
+    }
+}
