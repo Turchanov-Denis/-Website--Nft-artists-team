@@ -73,7 +73,7 @@ body {
   width: 210px;
   height: 48px;
   display: block;
-  margin: 0 auto;
+  margin: 40px auto;
   background: linear-gradient(180deg, #DB9F3E 0%, #FF6D00 100%);
   border-radius: 18px;
   font-family: "Graphik";
@@ -89,6 +89,19 @@ body {
 .nft-arts__slider {
   width: 871px;
   margin: 0px auto;
+}
+@media (max-width: 760px) {
+  .nft-arts {
+    margin: 200px 0;
+  }
+  .nft-arts__slider {
+    transform: translate(-10%);
+  }
+}
+@media (max-width: 560px) {
+  .nft-arts__slider {
+    transform: translate(-24%);
+  }
 }
 
 .social {
@@ -308,12 +321,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 1077px;
   background-image: url(../img/descover_bg.jpg);
-  background-size: 600px;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: 650px;
+  background-position: top;
 }
 .promo__expedition {
-  padding-top: 100px;
+  margin-top: 250px;
   height: 100%;
   background-image: url("../img/descover_mountion_add.png");
   background-repeat: no-repeat;
@@ -321,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
 }
 .promo__label {
-  margin-bottom: 50px;
+  margin: -100px 0 50px 0;
   font-family: "Himagsikan";
   font-style: normal;
   font-weight: 400;
