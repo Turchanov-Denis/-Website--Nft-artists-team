@@ -1,0 +1,39 @@
+.promo {
+    width: 100%;
+    height: 1077px;
+    background-image: url(../img/descover_bg.jpg);
+    background-size: cover;
+    
+
+    &__img {
+        // position: relative;
+        // right: 225px;
+        // bottom: 250px;
+    }
+
+    &__expedition {
+        height: 100%;
+        background-image: url("../img/descover_mountion_add.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 100px;
+
+    }
+
+    &__label {
+        margin-bottom: 50px;
+        font-family: 'Himagsikan';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 62px;
+        /* or 119% */
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    @media (max-width: 800px) {}
+
+}
